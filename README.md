@@ -30,9 +30,11 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vQBh3lZYElQ5XD6pUxVIG0LKFXPBnXoN
 https://docs.google.com/spreadsheets/d/e/2PACX-1vSxIA4dAsV9k0Q7aUDPQgP_P2_QGEOb18co9Efx42EYJEpIwkUDVu_BN72fnEJmFK5QW1GyPhbDAOz8/pubhtml
 
 ■画面ワイヤーフレーム
-https://docs.google.com/spreadsheets/d/e/2PACX-1vSKaxvBM7ILRYXKC_FYi0N97-I3wSsD7KCIFHQgqaV1PfQYsHdWiSxni802BYNJdWKVlBT3OL9RJCam/pubhtml
+https://docs.google.com/forms/d/e/1FAIpQLSf_EKZet-8caKtampv8RqRQ7Sa4SXrp3peROiUzv-PDPXXn1g/viewform
 
 ■使用予定Gem
-carrierwave
-mini_magick
-devise
+・carrierwave
+・mini_magick
+・devise
+・delayed_job_active_record
+・ransack
