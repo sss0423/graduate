@@ -26,10 +26,10 @@ https://docs.google.com/spreadsheets/d/e/2PACX-1vTEhDaP2r5oay346E54ErQW9t5wCwpjC
 ■テーブル定義
 https://docs.google.com/spreadsheets/d/e/2PACX-1vQBh3lZYElQ5XD6pUxVIG0LKFXPBnXoNrzMxUKu2ZP2F971IPp1P9NB33rmjfzoo9oxJNJ6qBjgwpcb/pubhtml
 
-■画面遷移図
+■画面遷移図(1113更新)
 https://docs.google.com/spreadsheets/d/e/2PACX-1vSxIA4dAsV9k0Q7aUDPQgP_P2_QGEOb18co9Efx42EYJEpIwkUDVu_BN72fnEJmFK5QW1GyPhbDAOz8/pubhtml
 
-■画面ワイヤーフレーム
+■画面ワイヤーフレーム(1113更新)
 https://docs.google.com/forms/d/e/1FAIpQLSf_EKZet-8caKtampv8RqRQ7Sa4SXrp3peROiUzv-PDPXXn1g/viewform
 
 ■使用予定Gem
