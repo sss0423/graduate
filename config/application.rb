@@ -13,6 +13,7 @@ module GraduateApp
     config.i18n.default_locale = :ja
     config.time_zone = 'Asia/Tokyo'
     config.active_job.queue_adapter = :delayed_job
+    config.assets.initialize_on_precompile = false
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
