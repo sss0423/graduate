@@ -1,0 +1,50 @@
+<div class="main posts-new">
+  <div class="container">
+
+  <%= form_with(model: memo, local: true) do |form| %>
+    <div class="form">
+      <div class="form-body">
+        <% if memo.errors.any? %>
+          <div id="error_explanation">
+            <h2><%= pluralize(memo.errors.count, "error") %> prohibited this memo from being saved:</h2>
+            <ul>
+              <% memo.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <div class="field">
+          <%= form.label :タイトル %>
+          <%= form.text_field :title, id: :memo_title %>
+        </div>
+
+        <div class="field">
+          <%= form.label :内容 %>
+          <%= form.text_area :content, id: :memo_content %><br>
+          文字数：<span class="count">0</span>
+          <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+          <script type="text/javascript">
+            $(function(){
+              $('textarea').bind('keydown keyup keypress change',function(){
+                var thisValueLength = $(this).val().length;
+              $('.count').html(thisValueLength);
+                });
+            });
+          </script>
+        </div>
+
+        <div class="field">
+          <%= form.label :画像登録 %><br>
+          <%= form.file_field :icon, id: :memo_icon %>
+        </div>
+        
+        <div class="actions">
+          <%= form.submit "作成"  %>
+        </div>
+      </div>
+    </div>
+  <% end %>
+  </div>
+</div>

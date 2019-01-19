@@ -32,7 +32,7 @@ Rails.application.configure do
 
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
   
-  config.action_mailer.default_url_options = { host: 'graduate-sugurusakanushi.c9users.io:8080' }
+  config.action_mailer.default_url_options = { host: 'graduate-sugurusakanushi.c9users.io' }#:8080
   
-  config.action_mailer.delivery_method = :letter_opener
+  config.action_mailer.delivery_method = :letter_opener_web
 end

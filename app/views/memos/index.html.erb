@@ -1,0 +1,49 @@
+<div class="main">
+  <div class="search">
+    <%= search_form_for @search do |f| %>
+      <div class="search_title">
+        <%= f.label :title_cont, "タイトル" %>
+        <%= f.text_field :title_cont, :placeholder =>"タイトル" %>
+      </div>
+      <div class="search_time">
+        <%= f.label :created_at, '年月日' %>
+        <%= f.date_select :created_at_gteq, include_blank: true %>〜
+        <%= f.date_select :created_at_lteq, include_blank: true %>
+      </div>
+      <div class="search_button">
+        <%= f.submit '検索する' %>
+      </div>
+    <% end %>
+  </div>
+  
+  <div class="container">
+    <div id="menu-list">
+      <ul>
+        <li><%= sort_link(@search, :title, 'タイトルでソート') %></li>
+        <li><%= sort_link(@search, :updated_at, '更新日時でソート') %></li>
+      </ul>
+    </div>
+
+    <% @memos.each do |memo| %>
+    <div class="posts-index-flame">
+      <div class="post-flame">
+        <div class="post-contents">
+          <div class="memo-icon">
+            <%= image_tag memo.icon %>
+          </div>
+          <div class="memo-title">
+            <%= memo.title %> <!--link_to, "/memos/#{memo.id}"-->
+          </div>
+          <div class="memo-update">
+            <%= memo.updated_at.strftime('%Y/%m/%d %H:%M') %>
+          </div>
+        </div>
+        <div class="contents-button">
+          <%= link_to '削除', memo, method: :delete, data: { confirm: '本当に削除しますか?' } %><!--,class: 'btn btn-primary'-->
+          <%= link_to '編集', edit_memo_path(memo) %><!--,class: 'btn btn-primary'-->
+        </div>
+      </div>
+    </div>
+    <% end %>
+  </div>
+</div>
