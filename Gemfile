@@ -21,7 +21,7 @@ gem 'ransack'
 gem 'delayed_job_active_record'
 gem 'carrierwave'
 gem 'mini_magick'
-
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
