@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :confirmable,
+         :recoverable, :rememberable, :trackable, :validatable, :confirmable,
          :authentication_keys => [:name]
 
   #nameを必須とする
