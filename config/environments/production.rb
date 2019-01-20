@@ -43,7 +43,7 @@ Rails.application.configure do
 
   config.active_record.dump_schema_after_migration = false
   
-  config.action_mailer.default_url_options = { host: 'https://peaceful-peak-56052..herokuapp.com/' }
+  config.action_mailer.default_url_options = { host: 'https://peaceful-peak-56052.herokuapp.com/' }
   #config.action_mailer.raise_delivery_errors = false
   ActionMailer::Base.delivery_method = :smtp
   ActionMailer::Base.smtp_settings = {
@@ -51,7 +51,7 @@ Rails.application.configure do
   password: ENV['SENDGRID_PASSWORD'],
   domain: "heroku.com",
   address: "smtp.SendGrid.net",
-  port: 2587,
+  port: 587,
   authentication: :plain,
   enable_starttls_auto: true
   }
