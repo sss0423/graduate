@@ -1,4 +1,4 @@
-class DeviseMailer < ApplicationMailer #Devise::Mailer
+class DeviseMailer < Devise::Mailer #Devise::Mailer
 
   default from: 'from@example.com'
 
