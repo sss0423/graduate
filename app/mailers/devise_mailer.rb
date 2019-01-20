@@ -5,7 +5,7 @@ class DeviseMailer < Devise::Mailer #Devise::Mailer
   def devise_mail(current_user)
     #@title = picture.title
     #@content = picture.content
-    mail to: current_user.email , subject: "登録確認"
+    mail to: @email , subject: "登録確認"
   end
 
 
