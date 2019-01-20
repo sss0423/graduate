@@ -24,5 +24,5 @@ class DeviseMailer < ApplicationMailer
       devise_mail(record, :confirmation_on_create_instructions, opts)
     end
   end
-+end
+  end
 end
