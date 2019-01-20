@@ -1,4 +1,4 @@
-class DeviseMailer < ApplicationMailer
+class DeviseMailer < Devise::Mailer
   if defined?(ActionMailer)
   class Devise::Mailer < Devise.parent_mailer.constantize
     include Devise::Mailers::Helpers
