@@ -7,10 +7,10 @@ class User < ApplicationRecord
   validates_uniqueness_of :name
   validates_presence_of :name
 
-  def send_on_create_confirmation_instructions
-    generate_confirmation_token!  unless @raw_confirmation_token
-    send_devise_notification(:confirmation_on_create_instructions, @raw_confirmation_token, {})
-  end
+#  def send_on_create_confirmation_instructions
+#    generate_confirmation_token!  unless @raw_confirmation_token
+#    send_devise_notification(:confirmation_on_create_instructions, @raw_confirmation_token, {})
+#  end
 
   #nameを利用してログインするようにオーバーライド
   def self.find_first_by_auth_conditions(warden_conditions)
