@@ -13,9 +13,8 @@ Rails.application.routes.draw do
 
   resources :memos
 
+  if Rails.env.development?
   mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
 
-#  if Rails.env.development?
-#sendgrid凍結解除できるまでletteropenerで登録作業    
-#  end
 end
