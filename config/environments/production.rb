@@ -43,6 +43,8 @@ Rails.application.configure do
 
   config.active_record.dump_schema_after_migration = false
 
+  config.action_mailer.default_url_options = { host: 'https://peaceful-peak-56052.herokuapp.com/' }#:8080
+
   config.action_mailer.delivery_method = :letter_opener_web  
 
 #  config.action_mailer.default_url_options = { host: 'https://peaceful-peak-56052.herokuapp.com/' }
