@@ -1,4 +1,3 @@
-/* reset ================================ */
 * {
   box-sizing: border-box;
 }
@@ -36,7 +35,7 @@ form input[type="submit"] {
 }
 
 
-/* 共通レイアウト ================================ */
+/* 共通レイアウト */
 body {
   color: #2d3133;
   background-color: white;
@@ -61,8 +60,7 @@ body {
   clear: both;
 }
 
-
-/* ヘッダー ================================ */
+/* ヘッダー */
 header {
   height: 64px;
   position: absolute;
@@ -84,7 +82,7 @@ header {
   font-size: 16px;
 }
 
-/* top ================================ */
+/* トップ */
 .top-main {
   padding: 200px 0 100px;
   text-align: center;
@@ -121,10 +119,7 @@ header {
   font-size: 24px;
 }
 
-/*トップメッセージ特殊効果*/
-
-
-/* フォーム================================ */
+/* フォーム */
 .form {
   max-width: 600px;
   margin: 0 auto;
@@ -176,7 +171,6 @@ header {
 }
 
 /*メニュー*/
-
 .drawer_menu a {
     color: inherit;
     text-decoration: none;
@@ -220,7 +214,6 @@ header {
     width: 120%;
     color: #555;
 }
-
 
 /* PC非表示 */
 
@@ -378,7 +371,6 @@ header {
         display: block;
         text-align: left;
     }
-    
     
     /* スマートフォン2階層目 */
     .drawer_menu .drawer_nav li:hover ul.second-level {

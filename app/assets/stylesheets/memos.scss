@@ -1,5 +1,3 @@
-/* posts/index ================================ */
-
 /*投稿フレーム*/
 .posts-index-flame {
   padding: 20px 0px;
@@ -10,7 +8,6 @@
 }
 
 /*タイトル・更新日時のメニュー*/
-
 #menu-list ul{ 
   margin: 0; 
   padding: 0; 
@@ -38,6 +35,7 @@
   text-align: left;
   font-size: 10px;
 }
+
 #menu-list li a:hover{
   border-left: 8px solid #474655;
   border-top: 1px solid #474655;
@@ -84,9 +82,7 @@
   margin-left:15px;
 }
 
-
 /*編集・削除ボタン*/ 
-
 .contents-button a{
   margin: 0px 4px;
   font-weight: 200;
@@ -142,7 +138,7 @@
 }
 
 
-/* 新規作成 ================================ */
+/* 新規作成 */
 .posts-new textarea {
   font-size: 20px;
   padding: 10px;
@@ -156,7 +152,7 @@
   opacity: 0.5;
 }
 
-/* 詳細画面 ================================ */
+/* 詳細画面 */
 .show-field {
   font-size: 14px;
   padding: 10px;
