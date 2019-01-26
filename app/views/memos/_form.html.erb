@@ -6,7 +6,7 @@
       <div class="form-body">
         <% if memo.errors.any? %>
           <div id="error_explanation">
-            <h2><%= pluralize(memo.errors.count, "error") %> prohibited this memo from being saved:</h2>
+            <h4><%= pluralize(memo.errors.count, "件のエラー") %></h4>
             <ul>
               <% memo.errors.full_messages.each do |message| %>
                 <li><%= message %></li>
