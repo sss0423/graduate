@@ -1,22 +1,20 @@
-<!--show画面は使用しない-->
-<!--<div class="main posts-new">
+<div class="main posts-new">
   <div class="container">
     <div class="form">
       <div class="form-body">
-
         <div class="field">
-          <= "タイトル：#{@memo.title}" %><br>
+          <%= image_tag @memo.icon %><%= "タイトル：#{@memo.title}" %>
         </div>
-
-        <div class="field">
-          <= "内容：#{@memo.content}" %><br>
+          <p>内容</p>
+        <div class="show-field">
+          <%= @memo.content %>
         </div>
-
-        <div class="field">
-          <= "画像：#{image_tag @memo.icon}" %><br>
+          <p><%= "文字数：#{@memo.content.size}" %></p>
+        <div class="contents-button">
+          <%= link_to '削除', memo_path, method: :delete, data: { confirm: '本当に削除しますか?' } %>
+          <%= link_to '編集', edit_memo_path %>
         </div>
-        
       </div>
     </div>
   </div>
-</div>-->
+</div>
